@@ -23,7 +23,7 @@ const EditNote = () => {
         try {
             const Id = localStorage.getItem('noteId');
             localStorage.removeItem('noteId');
-            const res = await axios.put(`http://localhost:3000/api/note/notes/edit/${Id}`, formData, {
+            const res = await axios.put(`http://localhost:5000/api/note/notes/edit/${Id}`, formData, {
                 headers: {
                     'Authorization': `${localStorage.getItem('token')}`,
                     'Content-Type': 'application/json'
