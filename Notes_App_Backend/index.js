@@ -6,8 +6,8 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:5173'
-  }));
+    origin: 'https://verve-bridge-9vi8ojuz8-ayushs-projects-6d3b7cab.vercel.app/'
+}));
 app.use(express.json());
 
 app.get('/', (req, res) => {
