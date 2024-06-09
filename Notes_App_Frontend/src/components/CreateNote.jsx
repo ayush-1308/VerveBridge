@@ -23,7 +23,7 @@ const CreateNote = () => {
 
     try {
         console.log(formData);
-      const res = await axios.post('http://localhost:5000/api/note/create', formData, {
+      const res = await axios.post('https://vervebridge.onrender.com/api/note/create', formData, {
         headers: {
             'Authorization': `${localStorage.getItem('token')}`,
             'Content-Type': 'application/json'

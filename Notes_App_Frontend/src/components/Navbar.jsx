@@ -17,7 +17,7 @@ const Navbar = () => {
     e.preventDefault();
     try {
       const query = searchTerm;
-        const response = await axios.get(`http://localhost:5000/api/note/notes/search?query=${query}`, {
+        const response = await axios.get(`https://vervebridge.onrender.com/api/note/notes/search?query=${query}`, {
             headers: {
                 'Authorization': `${localStorage.getItem('token')}`
             }

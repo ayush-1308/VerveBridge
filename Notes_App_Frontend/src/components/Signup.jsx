@@ -18,7 +18,7 @@ const Signup = () => {
     event.preventDefault()
 
     try {
-      const res = await axios.post('http://localhost:5000/api/user/signup', {
+      const res = await axios.post('https://vervebridge.onrender.com/api/user/signup', {
         email: formData.email,
         password: formData.password
       })

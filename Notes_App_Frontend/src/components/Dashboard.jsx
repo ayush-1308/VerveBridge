@@ -13,7 +13,7 @@ const Dashboard = () => {
     const fetchNotes = async () => {
       try {
         const response = await axios.get(
-          'http://localhost:5000/api/note/notes',
+          'https://vervebridge.onrender.com/api/note/notes',
           {
             headers: {
               Authorization: `${localStorage.getItem('token')}`,
@@ -33,7 +33,7 @@ const Dashboard = () => {
 
   const handleDelete = async (id) => {
     try {
-        await axios.delete(`http://localhost:5000/api/note/notes/${id}`, {
+        await axios.delete(`https://vervebridge.onrender.com/api/note/notes/${id}`, {
             headers: {
                 'Authorization': `${localStorage.getItem('token')}`,
                 'Content-Type': 'application/json'
@@ -50,7 +50,7 @@ const handleEdit = async (id) => {
   console.log(id)
   try {
     localStorage.setItem('noteId', id)
-    const res = await axios.put(`http://localhost:5000/api/note/notes/edit/${id}`, {}, {
+    const res = await axios.put(`https://vervebridge.onrender.com/api/note/notes/edit/${id}`, {}, {
       headers: {
         'Authorization': `${localStorage.getItem('token')}`,
         'Content-Type': 'application/json'
