@@ -15,6 +15,11 @@ userRouter.post('/signup', async (req, res) => {
     try {
        await user.save();
          const token = await jwt.sign({ email: user.email, id: user._id}, process.env.JWT_SECRET);
+         res.writeHead(200, {
+            "Access-Control-Allow-Origin": "*",
+            'Accept': '/',
+            "Content-Type": "application/json",
+        });
          return res.json({
             jwt: token,
          })
