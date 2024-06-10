@@ -15,3 +15,6 @@
 3. Use npm install command in both of your frontend and backend
 4. for the backend you can use `npx nodemon` or `node index.js`.
 
+## Demo Video
+
+![Video](https://drive.google.com/file/d/1Tk4JavHVYs5W0OIO4Vjt95bDutbE4sfK/view?usp=sharing)
