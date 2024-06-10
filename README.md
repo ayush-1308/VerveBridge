@@ -17,4 +17,4 @@
 
 ## Demo Video
 
-![Video](https://drive.google.com/file/d/1Tk4JavHVYs5W0OIO4Vjt95bDutbE4sfK/view?usp=sharing)
+https://drive.google.com/file/d/1Tk4JavHVYs5W0OIO4Vjt95bDutbE4sfK/view?usp=sharing
